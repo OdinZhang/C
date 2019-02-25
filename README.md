@@ -4,7 +4,7 @@
 
 可以关注我的微信公众号：我的数学世界
 
-我的博客（这个19年底左右就会停）[我的数学世界](https://www,godot.xyz)
+我的博客（这个19年底左右就会停）[我的数学世界](https://www.godot.xyz)
 
 或者这个博客[我的数学世界](https://odinzhang.gitee.io/hexo/)
 
