@@ -7,7 +7,11 @@
     "splitter",
     "katex",
     "disqus",
-    "back-to-top-button"],
+    "back-to-top-button",
+    "graph",
+    "chart",
+    "mermaid-gb3"
+],
 "pluginsConfig": {
     "tbfed-pagefooter": {
         "modify_label": "该文件修订时间：",
@@ -15,5 +19,8 @@
           },
  "disqus": {
         "shortName": "gitbookuse"
+    },
+    "chart": {
+        "type": "c3"
     }
 }}

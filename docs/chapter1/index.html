@@ -12,6 +12,7 @@
         
         
     
+    
     <link rel="stylesheet" href="../gitbook/style.css">
 
     
@@ -41,6 +42,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -66,7 +71,12 @@
         
     
 
+
+    
+
         
+    
+    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -82,6 +92,15 @@
     
     <link rel="prev" href="../" />
     
+
+    
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    <script src="../gitbook/gitbook-plugin-graph/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-graph/function-plot.js"></script>    
 
     </head>
     <body>
@@ -264,12 +283,13 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"C程序快速入门","level":"1.2","depth":1,"next":{"title":"C程序基本知识","level":"1.2.1","depth":2,"path":"chapter1/section1.1.md","ref":"chapter1/section1.1.md","articles":[]},"previous":{"title":"介绍","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["copy-code-button","tbfed-pagefooter","-lunr","-search","search-plus","splitter","katex","disqus","back-to-top-button"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"splitter":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/README.md","mtime":"2019-02-26T07:01:39.690Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-26T07:01:50.565Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"C程序快速入门","level":"1.2","depth":1,"next":{"title":"C程序基本知识","level":"1.2.1","depth":2,"path":"chapter1/section1.1.md","ref":"chapter1/section1.1.md","articles":[]},"previous":{"title":"介绍","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["copy-code-button","tbfed-pagefooter","-lunr","-search","search-plus","splitter","katex","disqus","back-to-top-button","graph","chart","mermaid-gb3"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"splitter":{},"graph":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chart":{"type":"c3"},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/README.md","mtime":"2019-02-26T07:01:39.690Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-26T14:18:59.833Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
@@ -302,6 +322,10 @@
         
     
         
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
         <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
@@ -309,6 +333,8 @@
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
 
     </body>
 </html>
