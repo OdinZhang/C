@@ -10,7 +10,8 @@
     "back-to-top-button",
     "graph",
     "chart",
-    "mermaid-gb3"
+    "mermaid-gb3",
+    "expandable-chapters-small"
 ],
 "pluginsConfig": {
     "tbfed-pagefooter": {
