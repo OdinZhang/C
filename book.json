@@ -1,3 +1,19 @@
 {
-    "plugins": ["mathjax"]
-}
+    "plugins": ["copy-code-button",
+    "tbfed-pagefooter",
+    "-lunr", 
+    "-search", 
+    "search-plus",
+    "splitter",
+    "katex",
+    "disqus",
+    "back-to-top-button"],
+"pluginsConfig": {
+    "tbfed-pagefooter": {
+        "modify_label": "该文件修订时间：",
+        "modify_format": "YYYY-MM-DD HH:mm:ss"
+          },
+ "disqus": {
+        "shortName": "gitbookuse"
+    }
+}}
