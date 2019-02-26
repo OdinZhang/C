@@ -22,5 +22,8 @@
     },
     "chart": {
         "type": "c3"
+    },
+    "theme-default": {
+        "showLevel": true
     }
 }}
