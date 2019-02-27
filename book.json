@@ -11,7 +11,8 @@
     "graph",
     "chart",
     "mermaid-gb3",
-    "expandable-chapters-small"
+    "expandable-chapters-small",
+    "alerts"
 ],
 "pluginsConfig": {
     "tbfed-pagefooter": {

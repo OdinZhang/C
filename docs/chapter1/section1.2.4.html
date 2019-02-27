@@ -50,6 +50,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -293,9 +297,96 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x8F93;&#x5165;&#x3001;&#x8F93;&#x51FA;&#x51FD;&#x6570;">&#x8F93;&#x5165;&#x3001;&#x8F93;&#x51FA;&#x51FD;&#x6570;</h1>
+                                <h1 id="&#x8F93;&#x51FA;&#x3001;&#x8F93;&#x5165;&#x51FD;&#x6570;">&#x8F93;&#x51FA;&#x3001;&#x8F93;&#x5165;&#x51FD;&#x6570;</h1>
+<h4 id="1-&#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x51FD;&#x6570;">1. &#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x51FD;&#x6570;</h4>
+<p><code>printf(&quot;&#x683C;&#x5F0F;&#x8BF4;&#x660E;&quot;,&#x9879;&#x76EE;&#x8F93;&#x51FA;&#x8868;);</code></p>
+<p>&#x9879;&#x76EE;&#x8F93;&#x51FA;&#x8868;&#x662F;&#x7531;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;0~n&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;</p>
+<p>&#x683C;&#x5F0F;&#x8BF4;&#x660E;&#xFF1A;</p>
+<ul>
+<li><p>&#x683C;&#x5F0F;&#x5B57;&#x6BB5;</p>
+<p>&#x8BF4;&#x660E;&#x9879;&#x76EE;&#x8F93;&#x51FA;&#x8868;&#x4E2D;&#x5404;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3001;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#x3001;&#x5BBD;&#x5EA6;&#x3001;&#x7CBE;&#x5EA6;</p>
+</li>
+<li><p>&#x63A7;&#x5236;&#x5B57;&#x7B26;</p>
+</li>
+<li><p>&#x9700;&#x8981;&#x539F;&#x6837;&#x8F93;&#x51FA;&#x7684;&#x5B57;&#x7B26;</p>
+</li>
+</ul>
+<p>&#x683C;&#x5F0F;&#x5B57;&#x6BB5;&#x7684;&#x5F62;&#x5F0F;&#x4E3A;<code>%[&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;] [&#x5BBD;&#x5EA6;&#x548C;&#x7CBE;&#x5EA6;&#x8BF4;&#x660E;] &#x683C;&#x5F0F;&#x7B26;</code>&#x683C;&#x5F0F;&#x7B26;&#x548C;%&#x4E4B;&#x95F4;&#x4E0D;&#x80FD;&#x63D2;&#x5165;&#x5176;&#x4ED6;&#x5B57;&#x7B26;</p>
+<p>printf&#x4E2D;&#x5E38;&#x7528;&#x683C;&#x5F0F;&#x7B26;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x683C;&#x5F0F;&#x7B26;</th>
+<th style="text-align:center">&#x8F93;&#x51FA;&#x9879;&#x5F62;&#x5F0F;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">d,i</td>
+<td style="text-align:center">&#x5341;&#x8FDB;&#x5236;&#x6574;&#x6570;&#xFF08;&#x6B63;&#x6570;&#x4E0D;&#x8F93;&#x51FA;&#x7B26;&#x53F7;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:center">x,X</td>
+<td style="text-align:center">&#x65E0;&#x7B26;&#x53F7;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x6574;&#x6570;&#xFF0C;&#x7528;X&#x65F6;&#x8F93;&#x51FA;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7684;&#x5927;&#x5199;&#x5B57;&#x6BCD;</td>
+</tr>
+<tr>
+<td style="text-align:center">o</td>
+<td style="text-align:center">&#x65E0;&#x7B26;&#x53F7;&#x516B;&#x8FDB;&#x5236;&#x6574;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:center">u</td>
+<td style="text-align:center">&#x65E0;&#x7B26;&#x53F7;&#x5341;&#x8FDB;&#x5236;&#x6574;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:center">f</td>
+<td style="text-align:center">&#x4EE5;&#x5C0F;&#x6570;&#x5F62;&#x5F0F;&#x8F93;&#x51FA;&#x5B9E;&#x6570;&#xFF0C;&#x9690;&#x542B;&#x8F93;&#x51FA;&#x516D;&#x4F4D;&#x5C0F;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:center">e,E</td>
+<td style="text-align:center">&#x4EE5;&#x6307;&#x6570;&#x5F62;&#x5F0F;&#x8F93;&#x51FA;&#x5B9E;&#x6570;&#xFF0C;&#x7528;E&#x65F6;&#x6307;&#x6570;&#x7528;E&#x8868;&#x793A;</td>
+</tr>
+<tr>
+<td style="text-align:center">g,G</td>
+<td style="text-align:center">&#x9009;&#x7528;%f&#x6216;%e&#x683C;&#x5F0F;&#x4E2D;&#x8F93;&#x51FA;&#x5BBD;&#x5EA6;&#x8F83;&#x77ED;&#x7684;&#x4E00;&#x79CD;&#x683C;&#x5F0F;&#xFF0C;&#x7528;G&#x65F6;&#x6307;&#x6570;&#x7528;&#x5927;&#x5199;&#x8868;&#x793A;</td>
+</tr>
+<tr>
+<td style="text-align:center">c</td>
+<td style="text-align:center">&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;</td>
+</tr>
+<tr>
+<td style="text-align:center">s</td>
+<td style="text-align:center">&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>[info] &#x6CE8;</strong></p>
+<p>&#x6574;&#x6570;&#x90E8;&#x5206;&#x8868;&#x8FBE;&#x5BBD;&#x5EA6;&#x5C0F;&#x6570;&#x90E8;&#x5206;&#x8868;&#x8FBE;&#x7CBE;&#x5EA6;
+<code>%5.2f</code>&#x8868;&#x793A;&#x5BBD;&#x5EA6;&#x4E3A;5&#x4E2A;&#x5B57;&#x7B26;&#x4F4D;&#xFF0C;&#x7CBE;&#x5EA6;&#x4E3A;&#x4FDD;&#x7559;&#x4E24;&#x4F4D;&#x5C0F;&#x6570;</p>
+</blockquote>
+<p>&#x53E6;&#xFF1A;</p>
+<blockquote>
+<p><strong>[warning] &#x6CE8;&#x610F;</strong></p>
+<p>&#x5BBD;&#x5EA6;&#x8BF4;&#x660E;&#x7F3A;&#x7701;&#x6216;&#x5C0F;&#x4E8E;&#x5B9E;&#x9645;&#x5BBD;&#x5EA6;&#x65F6;&#x6309;&#x5B9E;&#x9645;&#x5BBD;&#x5EA6;&#x8F93;&#x51FA;</p>
+<p>&#x7CBE;&#x5EA6;&#x8BF4;&#x660E;&#x7F3A;&#x7701;&#x65F6;&#x5C0F;&#x6570;&#x90E8;&#x5206;&#x53D6;&#x516D;&#x4F4D;</p>
+</blockquote>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x6570;&#x636E;&#x6309;&#x53F3;&#x5BF9;&#x9F50;&#x8F93;&#x51FA;&#xFF0C;&#x5F53;&#x5728;<code>%</code>&#x540E;&#x4F7F;&#x7528;<code>-</code>&#x65F6;&#x5219;&#x6309;&#x5DE6;&#x5BF9;&#x9F50;&#x8F93;&#x51FA;</p>
+<p>&#x5728;&#x53F3;&#x5BF9;&#x9F50;&#x65F6;&#x5BBD;&#x5EA6;&#x8BF4;&#x660E;&#x524D;&#x52A0;<code>0</code>&#x5219;&#x6570;&#x636E;&#x524D;&#x591A;&#x4F59;&#x7684;&#x7A7A;&#x4F4D;&#x7528;&#x201C;0&#x201D;&#x8865;&#x9F50;</p>
+<h4 id="2-&#x683C;&#x5F0F;&#x8F93;&#x5165;&#x51FD;&#x6570;">2. &#x683C;&#x5F0F;&#x8F93;&#x5165;&#x51FD;&#x6570;</h4>
+<p><code>scanf(&quot;&#x683C;&#x5F0F;&#x8BF4;&#x660E;&quot;,&#x5730;&#x5740;&#x8868;&#x5217;);</code></p>
+<p>&#x5730;&#x5740;&#x8868;&#x5217;&#x6307;&#x952E;&#x76D8;&#x8F93;&#x5165;&#x7684;&#x6570;&#x636E;&#x5E94;&#x5B58;&#x5165;&#x7684;&#x53D8;&#x91CF;&#x5730;&#x5740;&#xFF08;&amp;&#x53D8;&#x91CF;&#xFF09;&#xFF0C;&#x4E0D;&#x80FD;&#x662F;&#x8868;&#x8FBE;&#x5F0F;</p>
+<blockquote>
+<p><strong>[info]&#x6CE8;</strong></p>
+<p>&#x9664;&#x683C;&#x5F0F;&#x7B26;&#x4EE5;&#x5916;&#x7684;&#x5B57;&#x7B26;&#x5FC5;&#x987B;&#x6309;&#x539F;&#x6837;&#x8F93;&#x5165;&#xFF0C;&#x4E00;&#x822C;&#x662F;&#x8F93;&#x5165;&#x7684;&#x95F4;&#x9694;&#x5B57;&#x7B26;</p>
+</blockquote>
+<p>&#x5982;&#xFF1A;</p>
+<p><code>scanf(&quot;a = %d,b = %d&quot;,&amp;a,&amp;b);</code></p>
+<p>&#x8F93;&#x5165;&#x7684;&#x5FC5;&#x987B;&#x662F;</p>
+<p><code>a = 2,b = 3</code></p>
+<p>&#x683C;&#x5F0F;&#x8BF4;&#x660E;&#x4E2D;&#x6307;&#x5B9A;&#x5217;&#x5BBD;&#xFF0C;&#x7CFB;&#x7EDF;&#x4F1A;&#x6309;&#x5217;&#x5BBD;&#x81EA;&#x52A8;&#x622A;&#x53D6;&#x6570;&#x636E;</p>
+<p>&#x82E5;&#x4F7F;&#x7528;<code>*</code>&#x800C;&#x4E0D;&#x662F;<code>&amp;</code>&#x5219;&#x5C06;&#x5728;&#x8F93;&#x5165;&#x6570;&#x636E;&#x65F6;&#x8DF3;&#x8FC7;&#x4E00;&#x9879;&#xFF0C;&#x4E0D;&#x8D4B;&#x503C;&#x7ED9;&#x4EFB;&#x4F55;&#x53D8;&#x91CF;&#xFF0C;&#x4E14;&#x4E0D;&#x5E94;&#x6307;&#x5B9A;&#x7CBE;&#x5EA6; </p>
 <footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-02-26 22:39:38
+2019-02-27 17:27:23
 </span></footer>
                                 
                                 </section>
@@ -335,7 +426,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"输入、输出函数","level":"2.2.4","depth":2,"previous":{"title":"C程序语句","level":"2.2.3","depth":2,"path":"chapter1/section1.2.3.md","ref":"chapter1/section1.2.3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["copy-code-button","tbfed-pagefooter","-lunr","-search","search-plus","splitter","katex","disqus","back-to-top-button","graph","chart","mermaid-gb3","expandable-chapters-small"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"splitter":{},"graph":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"chart":{"type":"c3"},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/section1.2.4.md","mtime":"2019-02-26T14:39:38.728Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-26T16:01:50.005Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"输入、输出函数","level":"2.2.4","depth":2,"previous":{"title":"C程序语句","level":"2.2.3","depth":2,"path":"chapter1/section1.2.3.md","ref":"chapter1/section1.2.3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["copy-code-button","tbfed-pagefooter","-lunr","-search","search-plus","splitter","katex","disqus","back-to-top-button","graph","chart","mermaid-gb3","expandable-chapters-small","alerts"],"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"splitter":{},"graph":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"chart":{"type":"c3"},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/section1.2.4.md","mtime":"2019-02-27T09:27:23.450Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-27T09:27:31.375Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -379,6 +470,10 @@
     
         
         <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
         
     
         
