@@ -15,6 +15,14 @@
 ### C语言的运算符和表达式
 
 * [算术运算](chapter2/section2.1.md)
-  * [运算符与表达式](chapter2/2.1.1.md)
+  * [运算符与表达式](chapter2/section2.1.1.md)
+  * [算术运算符和算术表达式](chapter2/section2.1.2.md)
 * [赋值运算](chapter2/section2.2.md)
+  * [赋值运算符](chapter2/section2.2.1.md)
+  * [自增1（自减1）运算符](chapter2/section2.2.2.md)
 * [类型转换等运算](chapter2/section2.3.md)
+  * [类型转换](chapter2/section2.3.1.md)
+  * [逗号运算符](chapter2/section2.3.2.md)
+  * [容量运算符](chapter2/section2.3.3.md)
+  * [位运算符](chapter2/section2.3.4.md)
+
