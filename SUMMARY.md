@@ -26,3 +26,8 @@
   * [容量运算符](chapter2/section2.3.3.md)
   * [位运算符](chapter2/section2.3.4.md)
 
+### 选择结构
+
+* [关系运算符和逻辑运算符](chapter3/section3.1.md)
+* [if语句](chapter3/section3.2.md)
+* [switch语句](chapter3/section3.3.md)
