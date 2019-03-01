@@ -31,3 +31,10 @@
 * [关系运算符和逻辑运算符](chapter3/section3.1.md)
 * [if语句](chapter3/section3.2.md)
 * [switch语句](chapter3/section3.3.md)
+
+### 循环结构
+
+* [while循环](chapter4/section4.1.md)
+* [do-while循环](chapter4/section4.2.md)
+* [for循环](chapter4/section4.3.md)
+* [break和continue语句](chapter4/section4.4.md)
