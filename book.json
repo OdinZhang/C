@@ -16,7 +16,6 @@
     "mermaid-gb3",
     "expandable-chapters-small",
     "alerts",
-    "donate",
     "-sharing", 
     "sharing-plus"
 ],
@@ -30,14 +29,6 @@
     },
     "theme-default": {
         "showLevel": true
-    },
-    "donate": {
-        "wechat": "images/wechat.png",
-        "alipay": "images/alipay.jpg",
-        "title": "",
-        "button": "赏",
-        "alipayText": "支付宝打赏",
-        "wechatText": "微信打赏"
     },
     "sharing": {
         "douban": true,
