@@ -38,3 +38,16 @@
 * [do-while循环](chapter4/section4.2.md)
 * [for循环](chapter4/section4.3.md)
 * [break和continue语句](chapter4/section4.4.md)
+
+### 数组
+
+* [一维数组](chapter5/section5.1.md)
+
+* [二维数组](chapter5/section5.2.md)
+
+* [字符数组](chapter5/section5.3.md)
+
+  * [字符数组](chapter5/section5.3.1.md)
+  * [字符串处理函数](chapter5/section5.3..2md)
+
+  
