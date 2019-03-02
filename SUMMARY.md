@@ -48,6 +48,6 @@
 * [字符数组](chapter5/section5.3.md)
 
   * [字符数组](chapter5/section5.3.1.md)
-  * [字符串处理函数](chapter5/section5.3..2md)
+  * [字符串处理函数](chapter5/section5.3.2.md)
 
   

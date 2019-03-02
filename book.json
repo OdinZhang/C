@@ -1,4 +1,8 @@
+
 {
+    "title":"C语言学习笔记",
+    "language":"zh-hans",
+    "author":"Odin Zhang",
     "plugins": ["copy-code-button",
     "tbfed-pagefooter",
     "-lunr", 
