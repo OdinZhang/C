@@ -50,4 +50,20 @@
   * [字符数组](chapter5/section5.3.1.md)
   * [字符串处理函数](chapter5/section5.3.2.md)
 
-  
+
+### 函数
+
+* [咕咕咕](chapter6/section6.1.md)
+* [咕咕咕](chapter6/section6.2.md)
+* [咕咕咕](chapter6/section6.3.md)
+* [咕咕咕](chapter6/section6.4.md)
+* [咕咕咕](chapter6/section6.5.md)
+* [咕咕咕](chapter6/section6.6.md)
+* [咕咕咕](chapter6/section6.7.md)
+
+### 自定义数据类型
+
+* [枚举类型](chapter7/section7.1.md)
+* [结构体类型](chapter7/section7.2.md)
+
+* [共用体类型](chapter7/section7.3.md)

@@ -17,7 +17,8 @@
     "expandable-chapters-small",
     "alerts",
     "-sharing", 
-    "sharing-plus"
+    "sharing-plus",
+    "baidu-tongji"
 ],
 "pluginsConfig": {
     "tbfed-pagefooter": {
@@ -44,6 +45,9 @@
             "instapaper", "linkedin","twitter", "weibo", 
             "messenger","whatsapp"
         ]
+    },
+    "baidu-tongji": {
+        "token": "b4f796130918f58940a4f2b66db58ef7"
     }
 
 
