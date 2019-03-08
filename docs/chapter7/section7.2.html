@@ -858,9 +858,98 @@
     &#x6210;&#x5458;&#x8868;&#x5217;;
 };
 </code></pre>
-<p>&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x540D;</p>
+<p>&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x540D;&#x7528;&#x6765;&#x505A;&#x4E3A;&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x7684;&#x6807;&#x5FD7;&#xFF0C;&#x5728;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x65F6;&#x5FC5;&#x987B;&#x5BF9;&#x5404;&#x6210;&#x5458;&#x90FD;&#x8FDB;&#x884C;&#x7C7B;&#x578B;&#x8BF4;&#x660E;&#xFF0C;&#x5373;&#xFF1A;</p>
+<p><code>&#x7C7B;&#x578B;&#x540D; &#x6210;&#x5458;&#x540D;;</code></p>
+<p>&#x6210;&#x5458;&#x540D;&#x7684;&#x5B9A;&#x4E49;&#x89C4;&#x5219;&#x548C;&#x53D8;&#x91CF;&#x540D;&#x7684;&#x5B9A;&#x4E49;&#x89C4;&#x5219;&#x76F8;&#x540C;&#x3002;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x662F;&#x7B80;&#x5355;&#x53D8;&#x91CF;&#x3001;&#x6570;&#x7EC4;&#x3001;&#x6307;&#x9488;&#x3001;&#x7ED3;&#x6784;&#x4F53;&#x3001;&#x5171;&#x7528;&#x4F53;</p>
+<p>&#x5B9A;&#x4E49;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x4F4D;&#x7F6E;&#x4E00;&#x822C;&#x5728;&#x6240;&#x6709;&#x51FD;&#x6570;&#x5F00;&#x5934;&#xFF0C;&#x82E5;&#x5728;&#x51FD;&#x6570;&#x5185;&#x5B9A;&#x4E49;&#x5219;&#x53EA;&#x9002;&#x7528;&#x4E8E;&#x8BE5;&#x51FD;&#x6570;&#x5185;</p>
+<h4 id="2-&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;&#x7684;&#x5B9A;&#x4E49;">2. &#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;&#x7684;&#x5B9A;&#x4E49;</h4>
+<ol>
+<li><p>&#x5148;&#x5B9A;&#x4E49;&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x518D;&#x5B9A;&#x4E49;&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span> &#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x540D;
+{
+    &#x6210;&#x5458;&#x8868;&#x5217;;
+};
+<span class="hljs-keyword">struct</span> &#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x540D; &#x53D8;&#x91CF;&#x540D;&#x8868;&#x5217;;
+</code></pre>
+</li>
+<li><p>&#x5728;&#x5B9A;&#x4E49;&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x7684;&#x540C;&#x65F6;&#x5B9A;&#x4E49;&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span> &#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x540D;
+{
+    &#x6210;&#x5458;&#x8868;&#x5217;;
+}&#x53D8;&#x91CF;&#x540D;&#x8868;&#x5217;&#xFF1B;
+</code></pre>
+</li>
+<li><p>&#x76F4;&#x63A5;&#x5B9A;&#x4E49;&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;&#xFF0C;&#x65E0;&#x7C7B;&#x578B;&#x540D;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span>
+{
+    &#x6210;&#x5458;&#x8868;&#x5217;;
+}&#x53D8;&#x91CF;&#x540D;&#x8868;&#x5217;;
+</code></pre>
+</li>
+</ol>
+<blockquote>
+<p><strong>[info] &#x8BF4;&#x660E;</strong></p>
+<ol>
+<li>&#x7B2C;&#x4E00;&#x79CD;&#x6BD4;&#x8F83;&#x76F4;&#x89C2;&#x5E38;&#x7528;&#xFF0C;&#x5F62;&#x5F0F;&#x4E8C;&#x662F;&#x5F62;&#x5F0F;&#x4E00;&#x7684;&#x7B80;&#x7565;&#x5F62;&#x5F0F;&#xFF0C;&#x5F62;&#x5F0F;&#x4E09;&#x53EA;&#x80FD;&#x5728;&#x672C;&#x6587;&#x4EF6;&#x5185;&#x4F7F;&#x7528;</li>
+<li>&#x5B9A;&#x4E49;&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x65F6;&#x7CFB;&#x7EDF;&#x4E0D;&#x4F1A;&#x5206;&#x914D;&#x5185;&#x5B58;&#xFF0C;&#x5B9A;&#x4E49;&#x4E86;&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;&#x65F6;&#x624D;&#x4F1A;&#x5206;&#x914D;</li>
+</ol>
+</blockquote>
+<h4 id="3-&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;&#x7684;&#x521D;&#x59CB;&#x5316;">3. &#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;&#x7684;&#x521D;&#x59CB;&#x5316;</h4>
+<p>&#x5728;&#x5BF9;&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;&#x521D;&#x59CB;&#x5316;&#x65F6;&#xFF0C;&#x6309;&#x6210;&#x5458;&#x7684;&#x987A;&#x5E8F;&#x548C;&#x7C7B;&#x578B;&#x4F9D;&#x6B21;&#x5BF9;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x6BCF;&#x4E2A;&#x6210;&#x5458;&#x6307;&#x5B9A;&#x521D;&#x59CB;&#x503C;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span> student
+{
+    <span class="hljs-keyword">char</span> num[<span class="hljs-number">10</span>];
+    <span class="hljs-keyword">char</span> name[<span class="hljs-number">20</span>];
+    <span class="hljs-keyword">char</span> sex;
+    <span class="hljs-keyword">int</span> age;
+    <span class="hljs-keyword">float</span> score[<span class="hljs-number">3</span>];
+    <span class="hljs-keyword">float</span> ave
+};
+<span class="hljs-keyword">struct</span> student stu1 = {<span class="hljs-string">&quot;2019001&quot;</span>,<span class="hljs-string">&quot;LiHua&quot;</span>,<span class="hljs-string">&apos;M&apos;</span>,<span class="hljs-number">19</span>,<span class="hljs-number">84.3</span>,<span class="hljs-number">82.5</span>,<span class="hljs-number">89.4</span>,<span class="hljs-number">85.4</span>}
+</code></pre>
+<blockquote>
+<p><strong>[info] &#x8BF4;&#x660E;</strong></p>
+<ol>
+<li>&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x95F4;&#x7528;&#x9017;&#x53F7;&#x5206;&#x9694;</li>
+<li>&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x7684;&#x4E2A;&#x6570;&#x4E00;&#x822C;&#x4E0E;&#x6210;&#x5458;&#x7684;&#x4E2A;&#x6570;&#x76F8;&#x540C;&#xFF0C;&#x82E5;&#x5C0F;&#x4E8E;&#x6210;&#x5458;&#x6570;&#xFF0C;&#x5219;&#x81EA;&#x52A8;&#x521D;&#x59CB;&#x5316;&#x4E3A;0&#x6216;&#x7A7A;&#x683C;&#xFF08;&#x5B57;&#x7B26;&#x578B;&#xFF09;</li>
+<li>&#x521D;&#x59CB;&#x5316;&#x65F6;&#x6570;&#x636E;&#x7684;&#x7C7B;&#x578B;&#x8981;&#x4E0E;&#x76F8;&#x5E94;&#x6210;&#x5458;&#x7684;&#x7C7B;&#x578B;&#x4E00;&#x81F4;</li>
+<li>&#x521D;&#x59CB;&#x5316;&#x65F6;&#x53EA;&#x80FD;&#x5BF9;&#x6574;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#xFF0C;&#x4E0D;&#x80FD;&#x5BF9;&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x4E2D;&#x7684;&#x5404;&#x6210;&#x5458;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x8D4B;&#x503C;</li>
+</ol>
+</blockquote>
+<h4 id="4-&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x53D8;&#x91CF;&#x6210;&#x5458;&#x7684;&#x5F15;&#x7528;">4. &#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x53D8;&#x91CF;&#x6210;&#x5458;&#x7684;&#x5F15;&#x7528;</h4>
+<p>&#x4E00;&#x822C;&#x5F62;&#x5F0F;&#x4E3A;&#xFF1A;</p>
+<p><code>&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;.&#x6210;&#x5458;</code></p>
+<p>&#x5176;&#x4E2D;<code>.</code>&#x662F;&#x7ED3;&#x6784;&#x4F53;&#x6210;&#x5458;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x4F18;&#x5148;&#x7EA7;&#x522B;&#x6700;&#x9AD8;&#xFF0C;&#x7ED3;&#x5408;&#x6027;&#x81EA;&#x5DE6;&#x81F3;&#x53F3;&#xFF08;&#x5410;&#x69FD;&#xFF1A;&#x8FD9;&#x8DDF;Java&#x91CC;&#x9762;&#x7684;&#x7C7B;&#x597D;&#x50CF;&#x6CA1;&#x5DEE;&#xFF09;</p>
+<blockquote>
+<p><strong>[info] &#x8BF4;&#x660E;</strong></p>
+<ol>
+<li>&#x5728;C&#x4E2D;&#x4E0D;&#x5141;&#x8BB8;&#x5BF9;&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;&#x6574;&#x4F53;&#x8FDB;&#x884C;&#x5404;&#x79CD;&#x8FD0;&#x7B97;&#x3001;&#x8D4B;&#x503C;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x5BF9;&#x6210;&#x5458;&#x53EF;&#x4EE5;</li>
+<li>&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x8D4B;&#x7ED9;&#x53E6;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7ED3;&#x6784;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;</li>
+</ol>
+</blockquote>
+<h4 id="5-&#x7ED3;&#x6784;&#x4F53;&#x4E2D;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x6210;&#x5458;">5. &#x7ED3;&#x6784;&#x4F53;&#x4E2D;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x6210;&#x5458;</h4>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span> Date
+{
+    <span class="hljs-keyword">int</span> year;
+    <span class="hljs-keyword">int</span> month;
+    <span class="hljs-keyword">int</span> day;
+};
+
+<span class="hljs-keyword">struct</span> student
+{
+    <span class="hljs-keyword">struct</span> Date birthday;
+}stu1;
+
+stu1.birthday.year = <span class="hljs-number">2000</span>;
+</code></pre>
+<h4 id="6-&#x7528;typedef&#x4E3A;&#x7ED3;&#x6784;&#x4F53;&#x5B9A;&#x4E49;&#x522B;&#x540D;">6. &#x7528;typedef&#x4E3A;&#x7ED3;&#x6784;&#x4F53;&#x5B9A;&#x4E49;&#x522B;&#x540D;</h4>
+<p>&#x4E3A;&#x4E86;&#x5C06;&#x53D8;&#x91CF;&#x540D;&#x7B80;&#x5316;&#xFF0C;&#x5E38;&#x7528;typedef&#x4E3A;&#x5176;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x522B;&#x540D;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> student ST;
+ST stu1,stu2;
+</code></pre>
 <footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-03-03 17:49:43
+2019-03-08 15:50:18
 </span></footer>
                                 
                                 </section>
@@ -904,7 +993,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"结构体类型","level":"7.2","depth":1,"next":{"title":"共用体类型","level":"7.3","depth":1,"path":"chapter7/section7.3.md","ref":"chapter7/section7.3.md","articles":[]},"previous":{"title":"枚举类型","level":"7.1","depth":1,"path":"chapter7/section7.1.md","ref":"chapter7/section7.1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["copy-code-button","tbfed-pagefooter","-lunr","-search","search-plus","splitter","katex","back-to-top-button","graph","chart","mermaid-gb3","expandable-chapters-small","alerts","-sharing","sharing-plus","baidu-tongji"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"b4f796130918f58940a4f2b66db58ef7"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"graph":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":true,"all":["douban","facebook","google","hatenaBookmark","instapaper","linkedin","twitter","weibo","messenger","whatsapp"],"douban":true,"facebook":false,"weibo":true,"whatsapp":false,"line":false,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"Odin Zhang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"C语言学习笔记","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter7/section7.2.md","mtime":"2019-03-03T09:49:43.600Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-05T15:38:27.564Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"结构体类型","level":"7.2","depth":1,"next":{"title":"共用体类型","level":"7.3","depth":1,"path":"chapter7/section7.3.md","ref":"chapter7/section7.3.md","articles":[]},"previous":{"title":"枚举类型","level":"7.1","depth":1,"path":"chapter7/section7.1.md","ref":"chapter7/section7.1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["copy-code-button","tbfed-pagefooter","-lunr","-search","search-plus","splitter","katex","back-to-top-button","graph","chart","mermaid-gb3","expandable-chapters-small","alerts","-sharing","sharing-plus","baidu-tongji"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"b4f796130918f58940a4f2b66db58ef7"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"graph":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":true,"all":["douban","facebook","google","hatenaBookmark","instapaper","linkedin","twitter","weibo","messenger","whatsapp"],"douban":true,"facebook":false,"weibo":true,"whatsapp":false,"line":false,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"Odin Zhang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"C语言学习笔记","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter7/section7.2.md","mtime":"2019-03-08T07:50:18.183Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-08T09:17:52.950Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
