@@ -50,7 +50,6 @@
   * [字符数组](chapter5/section5.3.1.md)
   * [字符串处理函数](chapter5/section5.3.2.md)
 
-
 ### 函数
 
 * [咕咕咕](chapter6/section6.1.md)
@@ -67,3 +66,15 @@
 * [结构体类型](chapter7/section7.2.md)
 
 * [共用体类型](chapter7/section7.3.md)
+
+### 指针
+
+* [指针的引入](chapter8/section8.1.md)
+* [数组与指针](chapter8/section8.2.md)
+
+* [用指针操作字符串](chapter8/section8.3.md)
+
+* [指针与函数](chapter8/section8.4.md)
+
+* [指针数组和指向指针的指针](chapter8/section8.5.md)
+
