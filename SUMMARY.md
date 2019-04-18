@@ -82,7 +82,7 @@
 
 * [文件的概念](chapter9/section9.1.md)
 * [文件的打开和关闭](chapter9/section9.2.md)
-* [文件的读/写操作]()
-* [文件的定位操作]()
-* [文件的出错检测]()
+* [文件的读/写操作](chapter9/section9.3.md)
+* [文件的定位操作](chapter9/section9.4.md)
+* [文件的出错检测](chapter9/section9.5.md)
 
