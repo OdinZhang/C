@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>咕咕咕 · C语言学习笔记</title>
+        <title>函数的定义、调用和声明 · C语言学习笔记</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -656,7 +656,7 @@
                     
                         <b>6.1.</b>
                     
-                    咕咕咕
+                    函数的定义、调用和声明
             
                 </a>
             
@@ -671,7 +671,7 @@
                     
                         <b>6.2.</b>
                     
-                    咕咕咕
+                    函数的参数传递
             
                 </a>
             
@@ -686,7 +686,7 @@
                     
                         <b>6.3.</b>
                     
-                    咕咕咕
+                    变量的作用域
             
                 </a>
             
@@ -701,7 +701,7 @@
                     
                         <b>6.4.</b>
                     
-                    咕咕咕
+                    变量的存储类型
             
                 </a>
             
@@ -716,37 +716,7 @@
                     
                         <b>6.5.</b>
                     
-                    咕咕咕
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="6.6" data-path="section6.6.html">
-            
-                <a href="section6.6.html">
-            
-                    
-                        <b>6.6.</b>
-                    
-                    咕咕咕
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="6.7" data-path="section6.7.html">
-            
-                <a href="section6.7.html">
-            
-                    
-                        <b>6.7.</b>
-                    
-                    咕咕咕
+                    编译预处理
             
                 </a>
             
@@ -1000,7 +970,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >咕咕咕</a>
+        <a href=".." >函数的定义、调用和声明</a>
     </h1>
 </div>
 
@@ -1015,21 +985,71 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x4EBA;&#x7C7B;&#x7684;&#x672C;&#x8D28;&#x662F;&#x5495;&#x5495;&#x5495;">&#x4EBA;&#x7C7B;&#x7684;&#x672C;&#x8D28;&#x662F;&#x5495;&#x5495;&#x5495;</h1>
-<p>&#x53EA;&#x8981;&#x53BB;&#x5173;&#x6CE8;&#x6211;&#x7684;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#xFF0C;&#x5C31;&#x6709;AI&#xFF08;&#x8D85;&#x7EA7;&#x4EBA;&#x5DE5;&#x667A;<del>&#x969C;</del>&#x80FD;&#xFF09;&#x966A;&#x4F60;&#x804A;</p>
-<p>&#x76EE;&#x524D;&#x5DF2;&#x5B9E;&#x73B0;&#x7684;&#x529F;&#x80FD;&#x5305;&#x62EC;&#x4F46;&#x4E0D;&#x6B62;&#x4E8E;&#xFF1A;</p>
+                                <h1 id="&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x3001;&#x8C03;&#x7528;&#x548C;&#x58F0;&#x660E;">&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x3001;&#x8C03;&#x7528;&#x548C;&#x58F0;&#x660E;</h1>
+<h4 id="1-&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x548C;&#x8C03;&#x7528;">1. &#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x548C;&#x8C03;&#x7528;</h4>
+<p>&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;:</p>
+<pre><code class="lang-c">&#x51FD;&#x6570;&#x5934;
+{
+    &#x51FD;&#x6570;&#x4F53;
+}
+</code></pre>
 <ol>
-<li>&#x67E5;&#x5FEB;&#x9012;&#xFF08;&#x6211;&#x6CA1;&#x67E5;&#x6210;&#x8FC7;&#xFF09;</li>
-<li>&#x6597;&#x56FE;&#xFF08;&#x6CA1;&#x7ED9;&#x6211;&#x6597;&#x8FC7;&#x4E00;&#x5F20;&#xFF09;</li>
-<li>&#x8BA1;&#x7B97;&#x5668;&#xFF08;&#x6CA1;&#x7528;&#x8FC7;&#xFF09;</li>
-<li>&#x5728;&#x7EBF;&#x966A;&#x804A;&#xFF08;&#x6CA1;&#x7528;&#x8FC7;&#xFF09;</li>
-<li>&#x5217;&#x8F66;&#x67E5;&#x8BE2;&#xFF08;&#x6CA1;&#x7528;&#x8FC7;&#xFF09;</li>
-<li>&#x67E5;&#x5929;&#x6C14;&#xFF08;&#x8FD9;&#x4E2A;&#x6210;&#x529F;&#x4E86;&#xFF09;</li>
+<li><p>&#x51FD;&#x6570;&#x5934;&#xFF1A;
+C&#x7A0B;&#x5E8F;&#x901A;&#x8FC7;&#x51FD;&#x6570;&#x5934;&#x6765;&#x8C03;&#x7528;&#x51FD;&#x6570;&#xFF0C;&#x5176;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;:
+<code>&#x7C7B;&#x578B;&#x540D; &#x51FD;&#x6570;&#x540D;(&#x5F62;&#x53C2;&#x8868;&#x5217;)</code>
+&#x7C7B;&#x578B;&#x540D;&#x662F;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x65E0;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x51FD;&#x6570;&#x662F;void&#x578B;&#xFF0C;&#x800C;&#x51FD;&#x6570;&#x5934;&#x4E2D;&#x7C7B;&#x578B;&#x540D;&#x7F3A;&#x7701;&#x7684;&#x51FD;&#x6570;&#x8FD4;&#x56DE;int&#x578B;&#x3002;</p>
+<p>&#x51FD;&#x6570;&#x540D;&#x662F;&#x51FD;&#x6570;&#x7684;&#x6807;&#x8BC6;&#xFF0C;&#x5FC5;&#x987B;&#x662F;&#x5408;&#x6CD5;&#x7684;C&#x6807;&#x8BC6;&#x7B26;</p>
+<p>&#x62EC;&#x53F7;&#x4E2D;&#x7684;&#x5F62;&#x53C2;&#x8868;&#x5217;&#x662F;0&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x4EE5;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;&#x5F62;&#x5F0F;&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x5B9A;&#x4E49;&#x4E86;&#x8C03;&#x7528;&#x8BE5;&#x51FD;&#x6570;&#x65F6;&#x5FC5;&#x987B;&#x9001;&#x7ED9;&#x8BE5;&#x51FD;&#x6570;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x53CA;&#x6570;&#x636E;&#x4E2A;&#x6570;&#xFF0C;&#x4E4B;&#x6240;&#x4EE5;&#x79F0;&#x4E3A;&#x5F62;&#x5F0F;&#x53C2;&#x6570;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x51FD;&#x6570;&#x4E0D;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x7CFB;&#x7EDF;&#x4E0D;&#x7ED9;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x5206;&#x914D;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#xFF0C;&#x53EA;&#x5728;&#x8C03;&#x7528;&#x53D1;&#x751F;&#x65F6;&#xFF0C;&#x624D;&#x5206;&#x914D;&#x7A7A;&#x95F4;&#xFF0C;&#x8C03;&#x7528;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x7CFB;&#x7EDF;&#x53C8;&#x6536;&#x56DE;&#x7A7A;&#x95F4;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x51FD;&#x6570;&#x5934;&#x540E;&#x9762;&#x6CA1;&#x6709;&#x5206;&#x53F7;&#xFF0C;&#x5C31;&#x50CF;<code>main()</code>&#x51FD;&#x6570;&#x5934;&#x540E;&#x4E5F;&#x6CA1;&#x6709;&#x5206;&#x53F7;&#x4E00;&#x6837;</p>
+</li>
+<li><p>&#x51FD;&#x6570;&#x4F53;&#xFF1A;
+&#x51FD;&#x6570;&#x4F53;&#x662F;&#x7528;&#x4E00;&#x5BF9;&#x82B1;&#x62EC;&#x53F7;&#x62EC;&#x8D77;&#x6765;&#x7684;&#x8BED;&#x53E5;&#x7CFB;&#x5217;&#xFF08;&#x8BED;&#x53E5;&#x5757;&#xFF09;&#xFF0C;&#x5B83;&#x63CF;&#x8FF0;&#x4E86;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x67D0;&#x4E00;&#x529F;&#x80FD;&#x7684;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#xFF0C;&#x51FD;&#x6570;&#x6700;&#x540E;&#x8981;&#x6267;&#x884C;&#x8FD4;&#x56DE;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x4F5C;&#x7528;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x5C06;&#x7A0B;&#x5E8F;&#x7684;&#x6267;&#x884C;&#x4ECE;&#x5F53;&#x524D;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x5176;&#x4E0A;&#x7EA7;&#xFF08;&#x8C03;&#x7528;&#x5B83;&#x7684;&#x51FD;&#x6570;&#xFF09;</li>
+<li>&#x91CA;&#x653E;&#x8BE5;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x53CA;&#x53D8;&#x91CF;&#x6240;&#x5360;&#x7528;&#x7684;&#x5185;&#x5B58;&#x7A7A;&#x95F4;</li>
+<li>&#x5411;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x503C;&#xFF08;&#x5982;&#x679C;&#x51FD;&#x6570;&#x7684;&#x7C7B;&#x578B;&#x4E0D;&#x662F;void&#x65F6;&#xFF09;</li>
 </ol>
-<p>&#x6BCF;&#x5929;&#x6700;&#x591A;&#x53EA;&#x6709;100&#x6761;&#xFF0C;&#x9700;&#x8981;&#x571F;&#x8C6A;&#x5E2E;&#x4ED6;&#x53D8;&#x5F3A;</p>
-<p>&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x4E0D;&#x6027;&#x611F;&#x76F4;&#x7537;&#x4E13;&#x79D1;&#x751F;&#x5728;&#x7EBF;&#x966A;&#x804A; </p>
+<p>&#x5F53;&#x51FD;&#x6570;&#x8981;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x503C;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x901A;&#x8FC7; return&#x8BED;&#x53E5;&#x8FD4;&#x56DE;&#xFF0C;&#x5176;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;:</p>
+<p> <code>return (&#x8868;&#x8FBE;&#x5F0F;);</code></p>
+<p>&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7C7B;&#x578B;&#x5E94;&#x8BE5;&#x548C;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x65F6;&#x51FD;&#x6570;&#x540D;&#x524D;&#x7684;&#x7C7B;&#x578B;&#x4E00;&#x81F4;&#xFF0C;&#x6709;&#x51B2;&#x7A81;&#x65F6;&#xFF0C;&#x670D;&#x4ECE;&#x4E8E;&#x51FD;&#x6570;&#x540D;&#x524D;&#x7684;&#x7C7B;&#x578B;&#xFF0C; return&#x540E;&#x7684;&#x62EC;&#x53F7;&#x53EF;&#x6709;&#x53EF;&#x65E0;</p>
+<p>C&#x51FD;&#x6570;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;return&#x8BED;&#x53E5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x503C;&#xFF0C;&#x6240;&#x6709;return&#x8BED;&#x53E5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&#x5E94;&#x4E0E;&#x51FD;&#x6570;&#x540D;&#x524D;&#x7684;&#x7C7B;&#x578B;&#x4E00;&#x81F4;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x867D;&#x7136;&#x6709;&#x4E24;&#x4E2A;<code>return</code>&#x8BED;&#x53E5;&#xFF0C;&#x4F46;&#x6267;&#x884C;&#x65F6;&#x53EA;&#x53EF;&#x6267;&#x884C;&#x5230;&#x4E00;&#x4E2A;<code>return</code>&#x8BED;&#x53E5;</p>
+<p>&#x51FD;&#x6570;&#x53EA;&#x5B8C;&#x6210;&#x67D0;&#x4E00;&#x529F;&#x80FD;&#xFF0C;&#x800C;&#x4E0D;&#x8FD4;&#x56DE;&#x4EFB;&#x4F55;&#x503C;&#x65F6;&#xFF0C;&#x53EF;&#x5C06;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x6210;void&#x7C7B;&#x578B;&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x51FD;&#x6570;&#x4E2D;return&#x8BED;&#x53E5;&#x53EF;&#x6709;&#x53EF;&#x65E0;&#xFF0C;&#x51FD;&#x6570;&#x6267;&#x884C;&#x5B8C;&#x540E;&#x90FD;&#x6267;&#x884C;&#x8FD4;&#x56DE;&#x529F;&#x80FD;</p>
+<p>&#x5728;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x4E2D;&#x4E0D;&#x80FD;&#x51FA;&#x73B0;&#x540C;&#x540D;&#x7684;&#x591A;&#x4E2A;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x4E14;&#x51FD;&#x6570;&#x4F53;&#x5185;&#x4E0D;&#x80FD;&#x518D;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#xFF0C;&#x5373;&#x4E0D;&#x80FD;&#x5D4C;&#x5957;&#x5B9A;&#x4E49;</p>
+<p>&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x5C31;&#x662F;&#x7ED9;&#x51FA;&#x51FD;&#x6570;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&#xFF0C;&#x51FD;&#x6570;&#x7684;&#x5F62;&#x53C2;&#x540D;&#x5B57;&#x4E0E;&#x7C7B;&#x578B;&#xFF0C;&#x51FD;&#x6570;&#x7684;&#x5B9E;&#x73B0;&#x8BED;&#x53E5;&#xFF08;&#x51FD;&#x6570;&#x4F53;&#xFF09;</p>
+<p>&#x5728;&#x51FD;&#x6570;&#x4F53;&#x4E2D;&#x4E5F;&#x53EF;&#x4EE5;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x8BED;&#x53E5;&#xFF0C;&#x8FD9;&#x79CD;&#x51FD;&#x6570;&#x79F0;&#x4E3A;&#x7A7A;&#x51FD;&#x6570;</p>
+</li>
+</ol>
+<h4 id="2-&#x51FD;&#x6570;&#x539F;&#x578B;&#x3001;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x4E0E;&#x51FD;&#x6570;&#x8C03;&#x7528;">2. &#x51FD;&#x6570;&#x539F;&#x578B;&#x3001;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x4E0E;&#x51FD;&#x6570;&#x8C03;&#x7528;</h4>
+<ol>
+<li><p>&#x51FD;&#x6570;&#x539F;&#x578B;&#xFF1A;</p>
+<p>&#x8C03;&#x7528;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x7CFB;&#x7EDF;&#x9700;&#x8981;&#x77E5;&#x9053;&#x4E0B;&#x5217;&#x4FE1;&#x606F;&#xFF1A;</p>
+<ul>
+<li>&#x51FD;&#x6570;&#x7C7B;&#x578B;</li>
+<li>&#x51FD;&#x6570;&#x540D;</li>
+<li>&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#xFF08;&#x4E2A;&#x6570;&#x3001;&#x7C7B;&#x578B;&#x53CA;&#x987A;&#x5E8F;&#xFF09;</li>
+</ul>
+<p>&#x77E5;&#x9053;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x540E;&#xFF0C;&#x7CFB;&#x7EDF;&#x5C31;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x8BE5;&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x63CF;&#x8FF0;&#x4E86;&#x51FD;&#x6570;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x662F;&#x51FD;&#x6570;&#x7684;&#x7528;&#x6237;&#x754C;&#x9762;&#xFF0C;&#x79F0;&#x4E3A;&#x51FD;&#x6570;&#x539F;&#x578B;</p>
+</li>
+<li><p>&#x51FD;&#x6570;&#x7684;&#x58F0;&#x660E;&#xFF1A;</p>
+<p>&#x5728;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x524D;&#xFF0C;C&#x7CFB;&#x7EDF;&#x9700;&#x8981;&#x77E5;&#x9053;&#x51FD;&#x6570;&#x7684;&#x539F;&#x578B;&#xFF0C;&#x624D;&#x80FD;&#x4FDD;&#x8BC1;&#x51FD;&#x6570;&#x7684;&#x6B63;&#x786E;&#x8C03;&#x7528;&#xFF0C;&#x56E0;&#x6B64;&#x5F53;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x5728;&#x524D;&#xFF0C;&#x5B9A;&#x4E49;&#x5728;&#x540E;&#x65F6;&#xFF08;&#x5F53;&#x51FD;&#x6570;&#x4E3A;int&#x578B;&#x65F6;&#xFF0C;&#x4E5F;&#x53EF;&#x4E0D;&#x58F0;&#x660E;&#xFF09;&#xFF0C;&#x5FC5;&#x987B;&#x7528;&#x51FD;&#x6570;&#x539F;&#x578B;&#x58F0;&#x660E;&#xFF0C;&#x4EE5;&#x4FBF;C&#x7CFB;&#x7EDF;&#x83B7;&#x53D6;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002;&#x58F0;&#x660E;&#x65F6;&#x53C2;&#x6570;&#x540D;&#x53EF;&#x4EE5;&#x7F3A;&#x7701;&#xFF0C;&#x4F46;&#x7C7B;&#x578B;&#x540D;&#x4E0D;&#x53EF;&#x4EE5;&#x7F3A;&#x7701;</p>
+<p>&#x58F0;&#x660E;&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x540D;&#x76F8;&#x5F53;&#x4E8E;&#x6CE8;&#x91CA;&#xFF0C;&#x4EE5;&#x4FBF;&#x7CFB;&#x7EDF;&#x68C0;&#x67E5;&#x8C03;&#x7528;&#x65F6;&#x5B9E;&#x53C2;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x7F3A;&#x7701;</p>
+</li>
+<li><p>&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;&#xFF1A;</p>
+<p>&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x53EA;&#x662F;&#x8BF4;&#x660E;&#x4E86;&#x51FD;&#x6570;&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x624D;&#x80FD;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7684;&#x529F;&#x80FD;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li><p>&#x5B9E;&#x53C2;&#x6570;&#x5411;&#x5F62;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x6570;&#x636E;</p>
+</li>
+<li><p>&#x4E3A;&#x53C2;&#x6570;&#x548C;&#x51FD;&#x6570;&#x4F53;&#x5185;&#x7684;&#x53D8;&#x91CF;&#x5206;&#x914D;&#x5185;&#x5B58;&#x7A7A;&#x95F4;</p>
+</li>
+<li><p>&#x4E2D;&#x65AD;&#x5F53;&#x524D;&#x51FD;&#x6570;&#x7684;&#x6267;&#x884C;&#xFF0C;&#x628A;&#x6267;&#x884C;&#x6D41;&#x7A0B;&#x8F6C;&#x5411;&#x88AB;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x7684;&#x5165;&#x53E3;&#xFF0C;&#x6267;&#x884C;&#x88AB;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x3002;</p>
+</li>
+</ul>
+<p>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x8868;&#x8FBE;&#x5F0F;&#x8FDB;&#x884C;&#xFF0C;&#x5176;&#x5F62;&#x5F0F;&#x4E3A;:</p>
+<p><code>&#x51FD;&#x6570;&#x540D;(&#x5B9E;&#x53C2;&#x8868;&#x5217;)</code></p>
+<p>&#x5F53;&#x51FD;&#x6570;&#x65E0;&#x8FD4;&#x56DE;&#x503C;&#x65F6;&#xFF0C;&#x8C03;&#x7528;&#x8868;&#x8FBE;&#x5F0F;&#x540E;&#x52A0;&#x5206;&#x53F7;&#xFF0C;&#x4F5C;&#x4E3A;&#x8C03;&#x7528;&#x8BED;&#x53E5;&#x4F7F;&#x7528;&#x3002;&#x5F53;&#x51FD;&#x6570;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x65F6;&#xFF0C;&#x8C03;&#x7528;&#x8868;&#x8FBE;&#x5F0F;&#x4F5C;&#x4E3A;&#x5176;&#x4ED6;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF1B;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x8FD4;&#x56DE;&#x5230;&#x8C03;&#x7528;&#x65F6;&#x7684;&#x4E2D;&#x65AD;&#x5904;&#xFF0C;&#x4F46;&#x5F62;&#x53C2;&#x7684;&#x503C;&#x4E0D;&#x4F20;&#x9012;&#x7ED9;&#x5B9E;&#x53C2;&#xFF0C;&#x53C2;&#x6570;&#x7684;&#x4F20;&#x9012;&#x662F;&#x5355;&#x5411;&#x503C;&#x4F20;&#x9012;</p>
+</li>
+</ol>
 <footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-03-03 16:13:10
+2019-04-19 20:16:50
 </span></footer>
                                 
                                 </section>
@@ -1062,7 +1082,7 @@
                 </a>
                 
                 
-                <a href="section6.2.html" class="navigation navigation-next " aria-label="Next page: 咕咕咕">
+                <a href="section6.2.html" class="navigation navigation-next " aria-label="Next page: 函数的参数传递">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1073,7 +1093,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"咕咕咕","level":"6.1","depth":1,"next":{"title":"咕咕咕","level":"6.2","depth":1,"path":"chapter6/section6.2.md","ref":"chapter6/section6.2.md","articles":[]},"previous":{"title":"字符串处理函数","level":"5.3.2","depth":2,"path":"chapter5/section5.3.2.md","ref":"chapter5/section5.3.2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["copy-code-button","tbfed-pagefooter","-lunr","-search","search-plus","splitter","katex","back-to-top-button","graph","chart","mermaid-gb3","expandable-chapters-small","alerts","-sharing","sharing-plus","baidu-tongji"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"b4f796130918f58940a4f2b66db58ef7"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"graph":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":true,"all":["douban","facebook","google","hatenaBookmark","instapaper","linkedin","twitter","weibo","messenger","whatsapp"],"douban":true,"facebook":false,"weibo":true,"whatsapp":false,"line":false,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"Odin Zhang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"C语言学习笔记","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter6/section6.1.md","mtime":"2019-03-03T08:13:10.971Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-18T12:07:23.085Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"函数的定义、调用和声明","level":"6.1","depth":1,"next":{"title":"函数的参数传递","level":"6.2","depth":1,"path":"chapter6/section6.2.md","ref":"chapter6/section6.2.md","articles":[]},"previous":{"title":"字符串处理函数","level":"5.3.2","depth":2,"path":"chapter5/section5.3.2.md","ref":"chapter5/section5.3.2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["copy-code-button","tbfed-pagefooter","-lunr","-search","search-plus","splitter","katex","back-to-top-button","graph","chart","mermaid-gb3","expandable-chapters-small","alerts","-sharing","sharing-plus","baidu-tongji"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"b4f796130918f58940a4f2b66db58ef7"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"graph":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":true,"all":["douban","facebook","google","hatenaBookmark","instapaper","linkedin","twitter","weibo","messenger","whatsapp"],"douban":true,"facebook":false,"weibo":true,"whatsapp":false,"line":false,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"Odin Zhang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"C语言学习笔记","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter6/section6.1.md","mtime":"2019-04-19T12:16:50.980Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-19T12:58:51.411Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

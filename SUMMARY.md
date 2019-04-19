@@ -52,13 +52,11 @@
 
 ### 函数
 
-* [咕咕咕](chapter6/section6.1.md)
-* [咕咕咕](chapter6/section6.2.md)
-* [咕咕咕](chapter6/section6.3.md)
-* [咕咕咕](chapter6/section6.4.md)
-* [咕咕咕](chapter6/section6.5.md)
-* [咕咕咕](chapter6/section6.6.md)
-* [咕咕咕](chapter6/section6.7.md)
+* [函数的定义、调用和声明](chapter6/section6.1.md)
+* [函数的参数传递](chapter6/section6.2.md)
+* [变量的作用域](chapter6/section6.3.md)
+* [变量的存储类型](chapter6/section6.4.md)
+* [编译预处理](chapter6/section6.5.md)
 
 ### 自定义数据类型
 

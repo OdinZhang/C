@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>咕咕咕 · C语言学习笔记</title>
+        <title>变量的作用域 · C语言学习笔记</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -656,7 +656,7 @@
                     
                         <b>6.1.</b>
                     
-                    咕咕咕
+                    函数的定义、调用和声明
             
                 </a>
             
@@ -671,7 +671,7 @@
                     
                         <b>6.2.</b>
                     
-                    咕咕咕
+                    函数的参数传递
             
                 </a>
             
@@ -686,7 +686,7 @@
                     
                         <b>6.3.</b>
                     
-                    咕咕咕
+                    变量的作用域
             
                 </a>
             
@@ -701,7 +701,7 @@
                     
                         <b>6.4.</b>
                     
-                    咕咕咕
+                    变量的存储类型
             
                 </a>
             
@@ -716,37 +716,7 @@
                     
                         <b>6.5.</b>
                     
-                    咕咕咕
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="6.6" data-path="section6.6.html">
-            
-                <a href="section6.6.html">
-            
-                    
-                        <b>6.6.</b>
-                    
-                    咕咕咕
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="6.7" data-path="section6.7.html">
-            
-                <a href="section6.7.html">
-            
-                    
-                        <b>6.7.</b>
-                    
-                    咕咕咕
+                    编译预处理
             
                 </a>
             
@@ -1000,7 +970,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >咕咕咕</a>
+        <a href=".." >变量的作用域</a>
     </h1>
 </div>
 
@@ -1015,21 +985,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x4EBA;&#x7C7B;&#x7684;&#x672C;&#x8D28;&#x662F;&#x5495;&#x5495;&#x5495;">&#x4EBA;&#x7C7B;&#x7684;&#x672C;&#x8D28;&#x662F;&#x5495;&#x5495;&#x5495;</h1>
-<p>&#x53EA;&#x8981;&#x53BB;&#x5173;&#x6CE8;&#x6211;&#x7684;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#xFF0C;&#x5C31;&#x6709;AI&#xFF08;&#x8D85;&#x7EA7;&#x4EBA;&#x5DE5;&#x667A;<del>&#x969C;</del>&#x80FD;&#xFF09;&#x966A;&#x4F60;&#x804A;</p>
-<p>&#x76EE;&#x524D;&#x5DF2;&#x5B9E;&#x73B0;&#x7684;&#x529F;&#x80FD;&#x5305;&#x62EC;&#x4F46;&#x4E0D;&#x6B62;&#x4E8E;&#xFF1A;</p>
+                                <h1 id="&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;">&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;</h1>
+<h4 id="1-&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF08;&#x5185;&#x90E8;&#x53D8;&#x91CF;&#xFF09;">1. &#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF08;&#x5185;&#x90E8;&#x53D8;&#x91CF;&#xFF09;</h4>
+<p>&#x5728;&#x51FD;&#x6570;&#x4F53;&#x5185;&#x6216;&#x8BED;&#x53E5;&#x5757;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x79F0;&#x4E3A;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x5176;&#x4F5C;&#x7528;&#x57DF;&#x53EA;&#x5728;&#x6240;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;&#x4F53;&#x5185;&#x6216;&#x8BED;&#x53E5;&#x5757;&#x4E2D;</p>
+<h4 id="2-&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF08;&#x5916;&#x90E8;&#x53D8;&#x91CF;&#xFF09;">2. &#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF08;&#x5916;&#x90E8;&#x53D8;&#x91CF;&#xFF09;</h4>
+<p>&#x5728;&#x51FD;&#x6570;&#x4F53;&#x5916;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x79F0;&#x4E3A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x5B83;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4ECE;&#x5B9A;&#x4E49;&#x70B9;&#x8D77;&#xFF0C;&#x76F4;&#x5230;&#x672C;&#x6E90;&#x6587;&#x4EF6;&#x7ED3;&#x675F;&#xFF0C;&#x5982;&#x679C;&#x7528; extern&#x5173;&#x952E;&#x8BCD;&#x52A0;&#x4EE5;&#x5F15;&#x7528;&#x8BF4;&#x660E;&#xFF0C;&#x5B83;&#x7684;&#x4F5C;&#x7528;&#x8303;&#x56F4;&#x53EF;&#x4EE5;&#x6269;&#x5927;&#x5230;&#x5728;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x4E2D;&#x90FD;&#x53EF;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x8BF4;&#x660E;&#xFF1A;</p>
 <ol>
-<li>&#x67E5;&#x5FEB;&#x9012;&#xFF08;&#x6211;&#x6CA1;&#x67E5;&#x6210;&#x8FC7;&#xFF09;</li>
-<li>&#x6597;&#x56FE;&#xFF08;&#x6CA1;&#x7ED9;&#x6211;&#x6597;&#x8FC7;&#x4E00;&#x5F20;&#xFF09;</li>
-<li>&#x8BA1;&#x7B97;&#x5668;&#xFF08;&#x6CA1;&#x7528;&#x8FC7;&#xFF09;</li>
-<li>&#x5728;&#x7EBF;&#x966A;&#x804A;&#xFF08;&#x6CA1;&#x7528;&#x8FC7;&#xFF09;</li>
-<li>&#x5217;&#x8F66;&#x67E5;&#x8BE2;&#xFF08;&#x6CA1;&#x7528;&#x8FC7;&#xFF09;</li>
-<li>&#x67E5;&#x5929;&#x6C14;&#xFF08;&#x8FD9;&#x4E2A;&#x6210;&#x529F;&#x4E86;&#xFF09;</li>
+<li>&#x5728;&#x51FD;&#x6570;&#x4F53;&#x5185;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x53EA;&#x5728;&#x672C;&#x51FD;&#x6570;&#x6709;&#x6548;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x4E0D;&#x540C;&#x51FD;&#x6570;&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x540D;&#x5B57;&#x7684;&#x53D8;&#x91CF;</li>
+<li>main&#x51FD;&#x6570;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x4E5F;&#x53EA;&#x5728;main&#x51FD;&#x6570;&#x4E2D;&#x6709;&#x6548;&#xFF0C;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#x4E0D;&#x5F97;&#x4F7F;&#x7528;</li>
+<li>&#x5F62;&#x53C2;&#x4E5F;&#x662F;&#x5C40;&#x90E8;&#x53D8;&#x91CF;</li>
+<li>&#x51FD;&#x6570;&#x4F53;&#x5916;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x90FD;&#x662F;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x4F46;&#x6839;&#x636E;&#x5B9A;&#x4E49;&#x70B9;&#xFF0C;&#x4F5C;&#x7528;&#x8303;&#x56F4;&#x4E0D;&#x540C;</li>
+<li>&#x5916;&#x90E8;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x589E;&#x52A0;&#x51FD;&#x6570;&#x95F4;&#x7684;&#x8054;&#x7CFB;&#xFF0C;&#x4F46;&#x7834;&#x574F;&#x4E86;&#x51FD;&#x6570;&#x7684;&#x5C01;&#x88C5;&#x6027;&#xFF0C;&#x589E;&#x52A0;&#x4E86;&#x7A0B;&#x5E8F;&#x7684;&#x96BE;&#x8BFB;&#x6027;&#xFF08;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x90FD;&#x53EF;&#x4EE5;&#x6539;&#x53D8;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7684;&#x503C;&#xFF09;&#xFF0C;&#x5EFA;&#x8BAE;&#x5C11;&#x7528;&#x5168;&#x5C40;&#x53D8;&#x91CF; </li>
 </ol>
-<p>&#x6BCF;&#x5929;&#x6700;&#x591A;&#x53EA;&#x6709;100&#x6761;&#xFF0C;&#x9700;&#x8981;&#x571F;&#x8C6A;&#x5E2E;&#x4ED6;&#x53D8;&#x5F3A;</p>
-<p>&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x4E0D;&#x6027;&#x611F;&#x76F4;&#x7537;&#x4E13;&#x79D1;&#x751F;&#x5728;&#x7EBF;&#x966A;&#x804A; </p>
 <footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-03-03 16:13:15
+2019-04-19 20:26:10
 </span></footer>
                                 
                                 </section>
@@ -1057,12 +1027,12 @@
 
             
                 
-                <a href="section6.2.html" class="navigation navigation-prev " aria-label="Previous page: 咕咕咕">
+                <a href="section6.2.html" class="navigation navigation-prev " aria-label="Previous page: 函数的参数传递">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="section6.4.html" class="navigation navigation-next " aria-label="Next page: 咕咕咕">
+                <a href="section6.4.html" class="navigation navigation-next " aria-label="Next page: 变量的存储类型">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1073,7 +1043,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"咕咕咕","level":"6.3","depth":1,"next":{"title":"咕咕咕","level":"6.4","depth":1,"path":"chapter6/section6.4.md","ref":"chapter6/section6.4.md","articles":[]},"previous":{"title":"咕咕咕","level":"6.2","depth":1,"path":"chapter6/section6.2.md","ref":"chapter6/section6.2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["copy-code-button","tbfed-pagefooter","-lunr","-search","search-plus","splitter","katex","back-to-top-button","graph","chart","mermaid-gb3","expandable-chapters-small","alerts","-sharing","sharing-plus","baidu-tongji"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"b4f796130918f58940a4f2b66db58ef7"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"graph":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":true,"all":["douban","facebook","google","hatenaBookmark","instapaper","linkedin","twitter","weibo","messenger","whatsapp"],"douban":true,"facebook":false,"weibo":true,"whatsapp":false,"line":false,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"Odin Zhang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"C语言学习笔记","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter6/section6.3.md","mtime":"2019-03-03T08:13:15.216Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-18T12:07:23.085Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"变量的作用域","level":"6.3","depth":1,"next":{"title":"变量的存储类型","level":"6.4","depth":1,"path":"chapter6/section6.4.md","ref":"chapter6/section6.4.md","articles":[]},"previous":{"title":"函数的参数传递","level":"6.2","depth":1,"path":"chapter6/section6.2.md","ref":"chapter6/section6.2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["copy-code-button","tbfed-pagefooter","-lunr","-search","search-plus","splitter","katex","back-to-top-button","graph","chart","mermaid-gb3","expandable-chapters-small","alerts","-sharing","sharing-plus","baidu-tongji"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"b4f796130918f58940a4f2b66db58ef7"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"graph":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":true,"all":["douban","facebook","google","hatenaBookmark","instapaper","linkedin","twitter","weibo","messenger","whatsapp"],"douban":true,"facebook":false,"weibo":true,"whatsapp":false,"line":false,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"Odin Zhang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"C语言学习笔记","language":"zh-hans","gitbook":"*"},"file":{"path":"chapter6/section6.3.md","mtime":"2019-04-19T12:26:10.151Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-19T12:58:51.411Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
